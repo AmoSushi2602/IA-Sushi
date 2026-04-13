@@ -1,0 +1,5 @@
+tts_env/
+__pycache__/
+*.pyc
+data/memoria.txt
+.env
