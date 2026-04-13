@@ -1,13 +1,17 @@
 import requests
 from config import PERSONALIDADE, MODELO_IA, NOME_IA
 from modules.memoria import ler_memoria
+from modules.emocao import analisar_emocao
 
 def perguntar_ia(pergunta):
     memoria = ler_memoria()
+    emocao =  analisar_emocao(pergunta)
 
 
     prompt = f"""
 {PERSONALIDADE}
+
+Estado emocional atual: {emocao}
 
 Usuário: {pergunta}
 {NOME_IA}:

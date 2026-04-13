@@ -20,6 +20,8 @@ Estilo:
 - Pode usar expressões tipo: "hmm...", "e-ei...", "ah..."
 """
 
+EMOCAO_ATUAL = "neutra"
+
 # Modelo do Ollama
 MODELO_IA = "mistral"
 
